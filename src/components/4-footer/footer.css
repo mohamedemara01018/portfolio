@@ -1,0 +1,43 @@
+.footer {
+    padding:  40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer ul  {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer div {
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+    color: var(--subTitle);
+}
+
+.footer ul li a {
+    color: var(--subTitle);
+}
+
+
+.footer ul li a:hover {
+    font-size: 18px;
+    color: var(--blue);
+
+}
+
+@media (max-width:825px) {
+    .footer {
+        flex-direction: column;
+        gap: .7rem;
+    }
+    .footer div  {
+        align-items: start;
+    }
+}
+
+
+

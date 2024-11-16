@@ -1,0 +1,87 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+section  .parent-avatar {
+    background-color: var(--title);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid rgb(200, 195, 61);
+    padding: 2px;
+    box-shadow: 0px 0px 20px var(--primary) inset;
+    display: flex;
+
+}
+
+section  .parent-avatar  .avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+
+}
+
+section  .fa-check {
+    background-color: var(--blue);
+    color: var(--primary);
+    font-size: 10px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px solid black;
+    border-style: dashed;
+}
+
+section .image {
+    display: flex;
+    align-items: end;
+}
+
+section .left-section h1, section .left-section p {
+    margin-top: 20px;
+}
+
+section .left-section h1 {
+    font-size: 1.65rem;
+}
+section .left-section p {
+    color: var(--subTitle);
+    font-size: 0.9rem;
+    padding-top: 10px;
+}
+section .left-section .icons {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+section .left-section .icons i {
+    color: var(--subTitle);
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+section .left-section .icons i:hover {
+    color: var(--title);
+    font-size: 21px;
+
+}
+
+section .right-section {
+    min-width: 400px;
+}
+
+section .right-section .animation {
+    height: 100%;
+}
+
+@media (max-width:800px) {
+    section .right-section {
+        display: none
+    }
+}

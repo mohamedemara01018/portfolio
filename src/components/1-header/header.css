@@ -1,0 +1,132 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px  1rem;
+    margin: 1rem 0px;
+    
+    
+}
+
+header i {
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: var(--title);
+}
+header .icon {
+    background-color: var(--bgHeader);
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(79, 79, 44);
+    transition: 0.3s;
+
+}
+
+header .icon .fa-lightbulb{
+    color: gold;
+}
+header .icon:hover {
+    border-color: rgb(235, 235, 0);
+    cursor: pointer;
+}
+header nav {
+    background-color: var(--bgHeader);
+    padding: .6rem 1.6rem;
+    border-radius: 50px;
+    box-shadow: 1px 1px 20px var(--primary);
+}
+header ul {
+    display: flex;
+    gap: 16px
+}
+
+header ul li a {
+    color: var(--title);
+    opacity: 0.9;
+    font-size: .88rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all .2s;
+}
+header ul li a:hover {
+    color: var(--blue);
+    font-size: 0.95rem;
+
+}
+
+
+header button {
+    font-size: 1.2rem;
+}
+.container-model {
+    position: fixed;
+    inset: 0;
+    background-color: var(--border);
+    z-index: 1px;
+    backdrop-filter: blur(8px);
+}
+
+@keyframes mymove {
+    0% {scale: 0;}
+    60% {scale: 1.2}
+    100% {scale: 1;}
+}
+
+.container-model .model {
+    background-color: var(--primary);
+    width: 60%;
+    margin: auto;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin-top: 40px;
+    animation: mymove 0.7s 1;
+}
+
+
+.container-model .model ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-model .model .close-icon {
+    text-align: end;
+    
+}
+.container-model .model .close-icon i {
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.container-model .model .close-icon i:hover {
+    font-size: 24px;
+    color: crimson;
+    rotate: 180deg;
+}
+
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+@media (max-width:600px) {
+    header nav {
+        display: none;
+    }
+}
+
+@media (min-width:600px) {
+    header .show-model {
+        display: none;
+    }
+    header .container-model {
+        display: none;
+    }
+}

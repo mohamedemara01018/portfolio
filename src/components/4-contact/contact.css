@@ -1,0 +1,109 @@
+.contact-section {
+    padding: 20px;
+}
+
+
+
+.contact-section .top-section .t-top-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-section .t-top-section i {
+    font-size: 30px;
+    color: var(--subTitle);
+}
+
+.top-section p {
+    color: var(--subTitle);
+    margin-top: 1rem;
+}
+
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-section .left-bottom-section form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 20px;
+    width: fit-content;
+}
+.bottom-section .input {
+    margin-top: 40px;
+}
+
+.bottom-section  label {
+    color: var(--subTitle);
+}
+
+.bottom-section .input ,.bottom-section .textarea {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bottom-section .input input ,.bottom-section .textarea textarea {
+    background-color: var(--border);
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 400px;
+    border: 1px solid rgb(50, 51, 100);
+    border-radius: 4px;
+    color: var(--title);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-section .input input:focus ,.bottom-section .textarea textarea:focus {
+    border: 2px solid var(--blue);
+}
+.bottom-section .textarea textarea {
+    height: 150px;
+}
+
+.left-bottom-section form button  {
+    border: none;
+    outline: none;
+    border: 1px solid rgb(50, 51, 100);
+    border-radius: 4px;
+    background-color: var(--border);
+    height: 30px;
+    color: var(--subTitle);
+}
+
+.left-bottom-section button:hover {
+    cursor: pointer;
+    border: 1px solid var(--blue);
+    color: var(--title);
+}
+.left-bottom-section button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+@media (max-width:654px) {
+    .bottom-section .input input ,.bottom-section .textarea textarea {
+        width: 300px;
+    }
+}
+
+@media (max-width:430px) {
+    .bottom-section .input input ,.bottom-section .textarea textarea {
+        width: 200px;
+    }
+}
+
+@media (max-width:1100px) {
+    .bottom-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+}
