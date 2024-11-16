@@ -1,21 +1,30 @@
 import { useState } from "react";
 import "./main.css";
+import img1 from '../../assets/facebook.png'
+import img2 from '../../assets/fashion.png'
+import img3 from '../../assets/skywings.png'
+import img4 from '../../assets/pental.png'
+import img5 from '../../assets/customwebsite.png'
+import img6 from '../../assets/simplewesite.png'
+import img7 from '../../assets/simpleportfolio.png'
+import img8 from '../../assets/contactus.png'
+import img9 from '../../assets/z-index.png'
+
+
 function Main() {
     const [id, setId] = useState(1);
 
     const my_projects = [
-        { title: 'Social Media App Development ', category: ['react', 'ts'], imgPath: '../public/facebook.png', toWebsite: 'https://facebook-cb9df.web.app/', desc: 'Build Responsive Social Media App Development Website Design Using React, Typescript' },
-        { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: '../public/fashion.png', toWebsite: 'https://mohamedemara01018.github.io/fashion/', desc: 'Build Responsive Clothing Website Design Using HTML CSS And JavaScript' },
-        { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: '../public/skywings.png', toWebsite: 'https://mohamedemara01018.github.io/skywings/', desc: 'Build A Responsive sky wings Website Using HTML CSS & javascript' },
-        { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: '../public/pental.png', toWebsite: 'https://mohamedemara01018.github.io/Premium-Car-Rental/', desc: 'Build A Responsive Premium Car Rental Website Using HTML CSS & javascript' },
-        { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: '../public/customwebsite.png', toWebsite: 'https://mohamedemara01018.github.io/customWebsite/', desc: 'Simple Custom Website using HTML & CSS | Website' },
-        { title: 'HTML & CSS project', category: ['html and css'], imgPath: '../public/simplewesite.png', toWebsite: 'https://mohamedemara01018.github.io/simpleProfile/', desc: 'Simple Website Design using HTML & CSS | Simple Design Page' },
-        { title: 'HTML & CSS project', category: ['html and css'], imgPath: '../public/simpleportfolio.png', toWebsite: 'https://mohamedemara01018.github.io/simpleProfile/', desc: 'Simple Portfolio Website using HTML & CSS | Website With Typing Text Animation' },
-        { title: 'HTML & CSS project', category: ['html and css'], imgPath: '../public/contactus.png', toWebsite: 'https://mohamedemara01018.github.io/contactUs/', desc: 'Ressponsive Contact Us Form In HTML And CSS | Contact Us Page' },
-        { title: 'HTML & CSS project', category: ['html and css'], imgPath: '../public/z-index.png', toWebsite: 'https://mohamedemara01018.github.io/z-index/', desc: 'Image Hover Animation using HTML & CSS | Z-Index Transition' },
-        { title: 'React project', category: ['react'], imgPath: '../public/react1.jpg', toWebsite: '#', desc: 'mohamed gamal oshour' },
-        { title: 'React project', category: ['react'], imgPath: '../public/react2.jpg', toWebsite: '#', desc: 'mohamed gamal oshour' },
-        { title: 'React project', category: ['react'], imgPath: '../public/react3.webp', toWebsite: '#', desc: 'mohamed gamal oshour' },
+        { title: 'Social Media App Development ', category: ['react', 'ts'], imgPath: img1, toWebsite:' https://facebook-cb9df.web.app/', desc: 'Build Responsive Social Media App Development Website Design Using React, Typescript' },
+        { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img2 , toWebsite: 'https://mohamedemara01018.github.io/fashion/', desc: 'Build Responsive Clothing Website Design Using HTML CSS And JavaScript' },
+        { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img3, toWebsite: 'https://mohamedemara01018.github.io/skywings/', desc: 'Build A Responsive sky wings Website Using HTML CSS & javascript' },
+        { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img4,  toWebsite: 'https://mohamedemara01018.github.io/Premium-Car-Rental/', desc: 'Build A Responsive Premium Car Rental Website Using HTML CSS & javascript' },
+        { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img5,  toWebsite: 'https://mohamedemara01018.github.io/customWebsite/', desc: 'Simple Custom Website using HTML & CSS | Website' },
+        { title: 'HTML & CSS project', category: ['html and css'], imgPath: img6, toWebsite: 'https://mohamedemara01018.github.io/simpleProfile/', desc: 'Simple Website Design using HTML & CSS | Simple Design Page' },
+        { title: 'HTML & CSS project', category: ['html and css'], imgPath: img7, toWebsite: 'https://mohamedemara01018.github.io/simpleProfile/', desc: 'Simple Portfolio Website using HTML & CSS | Website With Typing Text Animation' },
+        { title: 'HTML & CSS project', category: ['html and css'], imgPath: img8, toWebsite: 'https://mohamedemara01018.github.io/contactUs/', desc: 'Ressponsive Contact Us Form In HTML And CSS | Contact Us Page' },
+        { title: 'HTML & CSS project', category: ['html and css'], imgPath: img9, toWebsite: 'https://mohamedemara01018.github.io/z-index/', desc: 'Image Hover Animation using HTML & CSS | Z-Index Transition' },
+
     ]
     const [projects, setProjects] = useState(my_projects)
     function filter_project(val) {

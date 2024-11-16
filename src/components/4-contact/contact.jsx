@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import "./contact.css";
 import { useForm, ValidationError } from '@formspree/react';
 import Lottie from "lottie-react";
-import doneAnimation from '../../../public/Animation - 1724450864533.json'
-import contactUs from '../../../public/contactUs.json'
+import doneAnimation from '../../assets/Animation - 1724450864533.json'
+import contactUs from '../../assets/contactUs.json'
 function Contact() {
     const [state, handleSubmit] = useForm("xanwllbo");
     const [form, setFrom] = useState({ input: '', textarea: '' })

@@ -1,6 +1,7 @@
 import Lottie from 'lottie-react';
 import './hero.css'
-import hero from '../../../public/hero.json'
+import hero from '../../assets/hero.json'
+import image from '../../assets/mypicture.png'
 function Hero() {
     return (
         <>
@@ -8,7 +9,7 @@ function Hero() {
                 <div className="left-section">
                     <div className="image">
                         <div className="parent-avatar">
-                            <img src="../public/mypicture.png" alt="" className="avatar" />
+                            <img src={image} alt="" className="avatar" />
                         </div>
                         <i className="fa-solid fa-check"></i>
                     </div>
