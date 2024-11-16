@@ -30,9 +30,9 @@ function Header() {
             <nav>
                 <ul >
                     <li><a href="#about">about</a></li>
-                    <li><a href="#articles-and-projects">articles</a></li>
-                    <li><a href="#articles-and-projects">projects</a></li>
-                    <li><a href="">speaking</a></li>
+                    <li><a href="#article">articles</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    {/* <li><a href="">speaking</a></li> */}
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
@@ -52,14 +52,14 @@ function Header() {
                     <ul>
                         <li onClick={()=>setShowmodel(false)}><a href="#about">about</a></li>
                         <div className='divider' />
-                        <li onClick={()=>setShowmodel(false)}><a href="#articles-and-projects">articles</a></li>
+                        <li onClick={()=>setShowmodel(false)}><a href="#article">articles</a></li>
                         <div className='divider' />
 
-                        <li onClick={()=>setShowmodel(false)}><a href="#articles-and-projects">project</a></li>
+                        <li onClick={()=>setShowmodel(false)}><a href="projects">project</a></li>
                         <div className='divider' />
 
-                        <li onClick={()=>setShowmodel(false)}><a href="">speaking</a></li>
-                        <div className='divider' />
+                        {/* <li onClick={()=>setShowmodel(false)}><a href="">speaking</a></li>
+                        <div className='divider' /> */}
 
                         <li onClick={()=>setShowmodel(false)}><a href="#contact">contact</a></li>
                     </ul>

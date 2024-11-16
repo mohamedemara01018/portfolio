@@ -5,9 +5,8 @@ function Footer() {
         <div className='footer'>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#articles-and-projects">Projects</a></li>
-                <li><a href="">Speaking</a></li>
-                <li><a href="">Uses</a></li>
+                <li><a href="#projects">Projects</a></li>
+                
             </ul>
             <div>
                 <i className="fa-regular fa-copyright"></i>

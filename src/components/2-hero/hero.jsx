@@ -5,7 +5,7 @@ import image from '../../assets/mypicture.png'
 function Hero() {
     return (
         <>
-            <section>
+            <section id='about'>
                 <div className="left-section">
                     <div className="image">
                         <div className="parent-avatar">
@@ -14,7 +14,7 @@ function Hero() {
                         <i className="fa-solid fa-check"></i>
                     </div>
                     <h1 className='title'>Front End Developer</h1>
-                    <p className='subTitle' id='about'>I developed modern, powerful, fast, user-friendly, and reactive web applications with React.js. I
+                    <p className='subTitle' id='article' >I developed modern, powerful, fast, user-friendly, and reactive web applications with React.js. I
                         have excellent experience in React.js, JavaScript, Typescript, HTML, and CSS.
                     </p>
                     <div className="icons">

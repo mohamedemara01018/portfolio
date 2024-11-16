@@ -50,7 +50,7 @@ function Main() {
         { id: 6, param: 'node and express', title: 'Node & Express', },
     ]
     return (
-        <div className="main-section" id='articles-and-projects'>
+        <div className="main-section" id='projects'>
             <div className="left-section">
 
                 {
