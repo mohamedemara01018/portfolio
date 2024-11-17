@@ -9,6 +9,7 @@ import img6 from '../../assets/simplewesite.png'
 import img7 from '../../assets/simpleportfolio.png'
 import img8 from '../../assets/contactus.png'
 import img9 from '../../assets/z-index.png'
+import img10 from '../../assets/fylo.png'
 
 
 function Main() {
@@ -16,6 +17,7 @@ function Main() {
 
     const my_projects = [
         { title: 'Social Media App Development ', category: ['react', 'ts'], imgPath: img1, toWebsite:' https://facebook-cb9df.web.app/', desc: 'Build Responsive Social Media App Development Website Design Using React, Typescript' },
+        { title: 'Project with React and Tailwind', category: ['react', 'js' , 'tailwind'], imgPath: img10 , toWebsite: 'https://fylo-red-omega.vercel.app/', desc: 'Build Responsive Clothing Website Design Using HTML CSS And JavaScript' },
         { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img2 , toWebsite: 'https://mohamedemara01018.github.io/fashion/', desc: 'Build Responsive Clothing Website Design Using HTML CSS And JavaScript' },
         { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img3, toWebsite: 'https://mohamedemara01018.github.io/skywings/', desc: 'Build A Responsive sky wings Website Using HTML CSS & javascript' },
         { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img4,  toWebsite: 'https://mohamedemara01018.github.io/Premium-Car-Rental/', desc: 'Build A Responsive Premium Car Rental Website Using HTML CSS & javascript' },
@@ -46,8 +48,9 @@ function Main() {
         { id: 2, param: 'html and css', title: 'HTML & CSS', },
         { id: 3, param: 'js', title: 'JavaScript', },
         { id: 4, param: 'react', title: 'React', },
-        { id: 5, param: 'ts', title: 'Typescript', },
-        { id: 6, param: 'node and express', title: 'Node & Express', },
+        { id: 5, param: 'tailwind', title: 'Tailwind', },
+        { id: 6, param: 'ts', title: 'Typescript', },
+        // { id: 7, param: 'node and express', title: 'Node & Express', },
     ]
     return (
         <div className="main-section" id='projects'>
