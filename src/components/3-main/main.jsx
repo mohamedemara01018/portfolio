@@ -11,6 +11,7 @@ import img8 from '../../assets/contactus.png'
 import img9 from '../../assets/z-index.png'
 import img10 from '../../assets/fylo.png'
 import img11 from '../../assets/ecommerce.png'
+import img12 from '../../assets/headphone.png'
 
 function Main() {
     const [id, setId] = useState(1);
@@ -18,16 +19,13 @@ function Main() {
     const my_projects = [
         { title: 'E-Commerce Application ', category: ['react', 'js', 'css'], imgPath: img11, toWebsite: ' https://e-commerce-b1c8d.web.app/', desc: 'Build Responsive E-Commerce Websit Design Using React, Javascript and css' },
         { title: 'Social Media App Development ', category: ['react', 'ts', 'css'], imgPath: img1, toWebsite: ' https://facebook-cb9df.web.app/', desc: 'Build Responsive Social Media App Development Website Design Using React, Typescript' },
+        { title: 'headphone website', category: ['html and css', 'js'], imgPath: img12, toWebsite: 'https://mohamedemara01018.github.io/responsive-landing-page-headphones-main/', desc: 'Build Responsive headphone website Using HTML CSS And JavaScript' },
         { title: 'Project with React and Tailwind', category: ['react', 'js', 'tailwind'], imgPath: img10, toWebsite: 'https://fylo-red-omega.vercel.app/', desc: 'Build Responsive Clothing Website Design Using HTML CSS And JavaScript' },
         { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img2, toWebsite: 'https://mohamedemara01018.github.io/fashion/', desc: 'Build Responsive Clothing Website Design Using HTML CSS And JavaScript' },
         { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img3, toWebsite: 'https://mohamedemara01018.github.io/skywings/', desc: 'Build A Responsive sky wings Website Using HTML CSS & javascript' },
         { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img4, toWebsite: 'https://mohamedemara01018.github.io/Premium-Car-Rental/', desc: 'Build A Responsive Premium Car Rental Website Using HTML CSS & javascript' },
         { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img5, toWebsite: 'https://mohamedemara01018.github.io/customWebsite/', desc: 'Simple Custom Website using HTML & CSS | Website' },
-        { title: 'HTML & CSS project', category: ['html and css'], imgPath: img6, toWebsite: 'https://mohamedemara01018.github.io/simpleProfile/', desc: 'Simple Website Design using HTML & CSS | Simple Design Page' },
-        { title: 'HTML & CSS project', category: ['html and css'], imgPath: img7, toWebsite: 'https://mohamedemara01018.github.io/simpleProfile/', desc: 'Simple Portfolio Website using HTML & CSS | Website With Typing Text Animation' },
-        { title: 'HTML & CSS project', category: ['html and css'], imgPath: img8, toWebsite: 'https://mohamedemara01018.github.io/contactUs/', desc: 'Ressponsive Contact Us Form In HTML And CSS | Contact Us Page' },
-        { title: 'HTML & CSS project', category: ['html and css'], imgPath: img9, toWebsite: 'https://mohamedemara01018.github.io/z-index/', desc: 'Image Hover Animation using HTML & CSS | Z-Index Transition' },
-
+        
     ]
     const [projects, setProjects] = useState(my_projects)
     function filter_project(val) {
