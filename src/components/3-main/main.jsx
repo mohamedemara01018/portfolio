@@ -4,15 +4,10 @@ import img1 from '../../assets/facebook.png'
 import img2 from '../../assets/fashion.png'
 import img3 from '../../assets/skywings.png'
 import img4 from '../../assets/pental.png'
-import img5 from '../../assets/customwebsite.png'
-import img6 from '../../assets/simplewesite.png'
-import img7 from '../../assets/simpleportfolio.png'
-import img8 from '../../assets/contactus.png'
-import img9 from '../../assets/z-index.png'
 import img10 from '../../assets/fylo.png'
 import img11 from '../../assets/ecommerce.png'
 import img12 from '../../assets/headphone.png'
-import img13 from '../../assets/appManagement.png'
+import img13 from '../../assets/appMangement.png'
 
 function Main() {
     const [id, setId] = useState(1);
