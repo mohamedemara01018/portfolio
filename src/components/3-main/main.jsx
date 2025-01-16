@@ -4,6 +4,7 @@ import img1 from '../../assets/facebook.png'
 import img2 from '../../assets/fashion.png'
 import img3 from '../../assets/skywings.png'
 import img4 from '../../assets/pental.png'
+import img5 from '../../assets/customwebsite.png'
 import img10 from '../../assets/fylo.png'
 import img11 from '../../assets/ecommerce.png'
 import img12 from '../../assets/headphone.png'
@@ -15,14 +16,14 @@ function Main() {
     const my_projects = [
         { title: 'E-Commerce Application ', category: ['react', 'js', 'css'], imgPath: img11, toWebsite: ' https://e-commerce-b1c8d.web.app/', desc: 'Build Responsive E-Commerce Websit Design Using React, Javascript and css' },
         { title: 'Social Media App Development ', category: ['react', 'ts', 'css'], imgPath: img1, toWebsite: ' https://facebook-cb9df.web.app/', desc: 'Build Responsive Social Media App Development Website Design Using React, Typescript' },
-        { title: 'headphone website', category: ['react' , 'tailwind', 'js'], imgPath: img13, toWebsite: 'https://todo-app-e710a.web.app/', desc: 'Build Responsive headphone website Using HTML CSS And JavaScript' },
+        { title: 'headphone website', category: ['react', 'tailwind', 'js'], imgPath: img13, toWebsite: 'https://todo-app-e710a.web.app/', desc: 'Build Responsive headphone website Using HTML CSS And JavaScript' },
         { title: 'headphone website', category: ['html and css', 'js'], imgPath: img12, toWebsite: 'https://mohamedemara01018.github.io/responsive-landing-page-headphones-main/', desc: 'Build Responsive headphone website Using HTML CSS And JavaScript' },
         { title: 'Project with React and Tailwind', category: ['react', 'js', 'tailwind'], imgPath: img10, toWebsite: 'https://fylo-red-omega.vercel.app/', desc: 'Build Responsive Clothing Website Design Using HTML CSS And JavaScript' },
         { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img2, toWebsite: 'https://mohamedemara01018.github.io/fashion/', desc: 'Build Responsive Clothing Website Design Using HTML CSS And JavaScript' },
         { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img3, toWebsite: 'https://mohamedemara01018.github.io/skywings/', desc: 'Build A Responsive sky wings Website Using HTML CSS & javascript' },
         { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img4, toWebsite: 'https://mohamedemara01018.github.io/Premium-Car-Rental/', desc: 'Build A Responsive Premium Car Rental Website Using HTML CSS & javascript' },
         { title: 'HTML CSS and javascribt project', category: ['html and css', 'js'], imgPath: img5, toWebsite: 'https://mohamedemara01018.github.io/customWebsite/', desc: 'Simple Custom Website using HTML & CSS | Website' },
-        
+
     ]
     const [projects, setProjects] = useState(my_projects)
     function filter_project(val) {
@@ -54,7 +55,7 @@ function Main() {
 
                 {
                     aaa.map((item) => {
-                        return <button data-active={item.id == id} onClick={() => {
+                        return <button key={item.id} data-active={item.id == id} onClick={() => {
                             setId(item.id);
                             filter_project(item.param);
                         }}>{item.title}</button>
